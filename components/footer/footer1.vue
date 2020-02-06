@@ -1,0 +1,140 @@
+<template>
+  <div>
+    <footer class="footer-light">
+      <div class="light-layout">
+      </div>
+      <section class="section-b-space light-layout">
+        <div class="container">
+          <div class="row footer-theme partition-f">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-title footer-mobile-title">
+                <h4>about</h4>
+              </div>
+              <div class="footer-contant">
+                <div class="footer-logo">
+                  <img :src="&quot;@/assets/images/icon/logo.png&quot;" alt="logo">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <div class="footer-social">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-google-plus" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-rss" aria-hidden="true" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col offset-xl-1">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>my account</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul>
+                    <li>
+                      <a href="#">mens</a>
+                    </li>
+                    <li>
+                      <a href="#">womens</a>
+                    </li>
+                    <li>
+                      <a href="#">clothing</a>
+                    </li>
+                    <li>
+                      <a href="#">accessories</a>
+                    </li>
+                    <li>
+                      <a href="#">featured</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>why we choose</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul>
+                    <li>
+                      <a href="#">shipping & return</a>
+                    </li>
+                    <li>
+                      <a href="#">secure shopping</a>
+                    </li>
+                    <li>
+                      <a href="#">gallary</a>
+                    </li>
+                    <li>
+                      <a href="#">affiliates</a>
+                    </li>
+                    <li>
+                      <a href="#">contacts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>store information</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul class="contact-list">
+                    <li>
+                      <i class="fa fa-map-marker" />Multikart Demo Store, Demo store India 345-659
+                    </li>
+                    <li>
+                      <i class="fa fa-phone" />Call Us: 123-456-7898
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope-o" />Email Us:
+                      <a href="#">Support@Fiot.com</a>
+                    </li>
+                    <li>
+                      <i class="fa fa-fax" />Fax: 123456
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <TapTop />
+  </div>
+</template>
+
+<script>
+import TapTop from '../widgets/tap-to-top'
+export default {
+  components: {
+    TapTop
+  }
+}
+</script>
