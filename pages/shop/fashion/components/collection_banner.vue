@@ -5,7 +5,7 @@
         <div class="row partition2">
           <div v-for="(item, index) in items" :key="index" class="col-md-6">
             <div>
-              <div class="collection-banner p-right text-center" style="width: 520px; height: 250px">
+              <div class="collection-banner p-right text-center">
                 <div class="img-part">
                   <img :src="item.imagepath" class="img-fluid" alt>
                 </div>
