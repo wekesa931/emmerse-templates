@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable -->
   <div>
-    <div class="title1 section-t-space">
+    <div class="title1 section-t-space p-t-0">
       <h4>{{ subtitle }}</h4>
       <h2 class="title-inner1">
         {{ title }}
@@ -18,10 +18,16 @@
                   :title="collection.categoryname"
                   :key="index"
                 >
+                  <div style="margin: 3%; color: black; display: flex">
+                    <h4>{{collection.categoryname}}</h4>
+                    <nuxt-link :to="{ path: '/product/categories/'+collection.categoryname}">
+                      <h4 style="color: black">SEE ALL <i aria-hidden="true" class="fa fa-angle-right"></i></h4>
+                    </nuxt-link>
+                  </div>
                   <div class="no-slider row">
                     <div
                       class="product-box"
-                      v-for="(product,index) in getCategoryProduct(collection.categoryname)"
+                      v-for="(product,index) in getCategoryProduct(collection.categoryname).slice(0,8)"
                       :key="index"
                     >
                     <productBox1

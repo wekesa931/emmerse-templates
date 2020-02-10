@@ -2,7 +2,7 @@
   <div>
     <Header />
     <Slider />
-    <CollectionBanner />
+    <!-- <CollectionBanner /> -->
     <ProductSlider
       :products="productslist"
       @openQuickview="showQuickview"

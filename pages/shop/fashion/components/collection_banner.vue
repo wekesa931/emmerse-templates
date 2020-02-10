@@ -1,27 +1,29 @@
 <template>
-  <div>
-    <section class="pb-0 ratio2_1">
-      <div class="container">
-        <div class="row partition2">
-          <div v-for="(item, index) in items" :key="index" class="col-md-6">
-            <div>
-              <div class="collection-banner p-right text-center">
-                <div class="img-part">
-                  <img :src="item.imagepath" class="img-fluid" alt>
-                </div>
-                <div class="contain-banner">
-                  <div>
-                    <h4>{{ item.subtitle }}</h4>
-                    <h2>{{ item.title }}</h2>
-                  </div>
+  <section class="section-b-space p-t-6 ratio_40">
+    <div class="container">
+      <div class="row partition2">
+        <div class="col-md-6" v-for="(item, index) in items" :key="index">
+          <div>
+            <div class="collection-banner p-right text-center">
+              <div class="img-part">
+                <img
+                  :src="item.imagepath"
+                  class="img-fluid bg-img"
+                  alt
+                >
+              </div>
+              <div class="contain-banner">
+                <div>
+                  <h4 class="text-white">{{item.subtitle}}</h4>
+                  <h2 style="color: white;">{{item.title}}</h2>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 <script type="text/javascript">
 export default {
