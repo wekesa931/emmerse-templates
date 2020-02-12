@@ -37,7 +37,6 @@ import compareModel from "../../../components/widgets/compare-popup";
 import Slider from "./components/slider";
 import CollectionBanner from "./components/collection_banner";
 import ProductSlider from "./components/product_slider";
-import Banner from "./components/banner";
 import ProductTab from "./components/product_tab";
 import Services from "./components/services";
 import Instagram from "./components/instagram";
@@ -49,7 +48,6 @@ export default {
     Slider,
     CollectionBanner,
     ProductSlider,
-    Banner,
     ProductTab,
     Services,
     Instagram,
