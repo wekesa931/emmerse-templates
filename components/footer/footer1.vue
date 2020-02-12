@@ -53,19 +53,19 @@
                 <div class="footer-contant">
                   <ul>
                     <li>
-                      <a href="/product/categories/Kente%20Designs">Kente Designs</a>
+                      <p href="/product/categories/Kente%20Designs">Kente Designs</p>
                     </li>
                     <li>
-                      <a href="/product/categories/Avengers%20vibes">Avengers Vibes</a>
+                      <p href="/product/categories/Avengers%20vibes">Avengers Vibes</p>
                     </li>
                     <li>
-                      <a href="/product/categories/Off-shoulders">Off Shoulder</a>
+                      <p href="/product/categories/Off-shoulders">Off Shoulder</p>
                     </li>
                     <li>
-                      <a href="/product/categories/Ankara%20Polo%20Casual%20Shirts">Polo Casual</a>
+                      <p href="/product/categories/Ankara%20Polo%20Casual%20Shirts">Polo Casual</p>
                     </li>
                     <li>
-                      <a href="/product/categories/Dashiki">Dashiki</a>
+                      <p href="/product/categories/Dashiki">Dashiki</p>
                     </li>
                   </ul>
                 </div>
