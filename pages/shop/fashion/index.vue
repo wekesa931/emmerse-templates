@@ -40,7 +40,6 @@ import ProductSlider from "./components/product_slider";
 import Banner from "./components/banner";
 import ProductTab from "./components/product_tab";
 import Services from "./components/services";
-import Blog from "./components/blog";
 import Instagram from "./components/instagram";
 import LogoSlider from "./components/logo_slider";
 
@@ -53,7 +52,6 @@ export default {
     Banner,
     ProductTab,
     Services,
-    Blog,
     Instagram,
     LogoSlider,
     Footer,
