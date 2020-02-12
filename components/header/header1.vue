@@ -78,7 +78,7 @@ export default {
 #myHeader {
   z-index: 10;
   max-width: 100%;
-  background: #f3f1f1;
+  background: white;
   height: 125px;
   /* overflow: hidden; */
   }

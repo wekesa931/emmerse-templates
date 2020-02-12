@@ -14,7 +14,7 @@
           ]
         },
         {
-          "title": "Contact Us", "type": "sub", "active": false, "redirectTo": "/shop/fashion"
+          "title": "Contact Us", "type": "sub", "active": false, "redirectTo": "/page/account/contact"
         },
         {
           "title": "Our Stores", "type": "sub", "active": false, "redirectTo": "/shop/fashion"

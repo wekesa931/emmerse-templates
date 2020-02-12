@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable -->
   <div>
     <Header />
     <Breadcrumbs title="Contact" />
@@ -21,7 +22,6 @@
                   </div>
                   <div class="media-body">
                     <p>{{ phone1 }}</p>
-                    <p>{{ phone2 }}</p>
                   </div>
                 </li>
                 <li>
@@ -40,24 +40,13 @@
                   </div>
                   <div class="media-body">
                     <p>{{ email1 }}</p>
-                    <p>{{ email2 }}</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-icon">
-                    <i class="fa fa-fax" aria-hidden="true" />
-                    <h6>Fax</h6>
-                  </div>
-                  <div class="media-body">
-                    <p>{{ email1 }}</p>
-                    <p>{{ email2 }}</p>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="display: none">
           <div class="col-sm-12">
             <form class="theme-form" method="post" @submit="checkForm">
               <div v-if="errors.length">
@@ -144,6 +133,7 @@
   </div>
 </template>
 <script>
+/* eslint-disable */
 import Header from '../../../components/header/header1'
 import Footer from '../../../components/footer/footer1'
 import Breadcrumbs from '../../../components/widgets/breadcrumbs'
@@ -157,10 +147,10 @@ export default {
     return {
       phoneimage: require('@/assets/images/icon/phone.png'),
       emailimage: require('@/assets/images/icon/email.png'),
-      phone1: '+91 123 - 456 - 7890',
+      phone1: '704233752',
       phone2: '+86 163 - 451 - 7894',
       address: 'ABC Complex,Near xyz, New York <br /> USA 123456',
-      email1: 'Support@Shopcart.com',
+      email1: 'chessacreations@gmail.com',
       email2: 'info@shopcart.com',
       errors: [],
       fname: null,

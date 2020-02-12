@@ -6,7 +6,7 @@
         <div class="toggle-nav" @click="openmobilenav=true">
           <i class="fa fa-bars sidebar-bar"></i>
         </div>
-        <ul class="nav-menu" :class="{ opennav: openmobilenav }" style="background: #f3f1f1;" >
+        <ul class="nav-menu" :class="{ opennav: openmobilenav }" style="background: white;" >
           <li class="back-btn">
             <div class="mobile-back text-right">
               <span @click="openmobilenav=false">Back</span>
