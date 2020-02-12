@@ -15,7 +15,6 @@
                       <i aria-hidden="true" class="fa fa-angle-left" style="color: black; fontSize: 30px"></i>
                     </div>
                   </a>
-                  <!-- <LeftSidebar :left-sidebar-val="leftSidebarVal" @closeVal="closeBarValFromChild" /> -->
                 </div>
                 <div class="brand-logo">
                   <nuxt-link :to="{ path: '/'}">
@@ -37,13 +36,11 @@
 <script>
 /* eslint-disable */
 import TopBar from '../widgets/topbar'
-import LeftSidebar from '../widgets/left-sidebar'
 import Nav from '../widgets/navbar'
 import HeaderWidgets from '../widgets/header-widgets'
 export default {
   components: {
     TopBar,
-    LeftSidebar,
     Nav,
     HeaderWidgets
   },
