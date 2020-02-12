@@ -81,7 +81,7 @@ export default {
     this.collection = this.$route.params.name;
     const products = this.$store.getters["products/returnProducts"];
     if (products.length === 0) {
-      this.$router.push("/shop/fashion");
+      this.$router.push("/");
       return;
     }
     let allProducts;

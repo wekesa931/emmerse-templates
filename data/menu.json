@@ -1,7 +1,7 @@
 {
   "data": [
         {
-          "title": "Home", "type": "sub", "badgeValue": "new", "active": false, "redirectTo": "/shop/fashion"
+          "title": "Home", "type": "sub", "badgeValue": "new", "active": false, "redirectTo": "/"
         },
         {
           "title": "Categories", "type": "sub", "active": false, "redirectTo": "#",
@@ -17,10 +17,10 @@
           "title": "Contact Us", "type": "sub", "active": false, "redirectTo": "/page/account/contact"
         },
         {
-          "title": "Our Stores", "type": "sub", "active": false, "redirectTo": "/shop/fashion"
+          "title": "Our Stores", "type": "sub", "active": false, "redirectTo": "/"
         },
         {
-          "title": "Blog", "type": "sub", "active": false, "redirectTo": "/shop/fashion"
+          "title": "Blog", "type": "sub", "active": false, "redirectTo": "/"
         }
       ]
 }
