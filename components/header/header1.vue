@@ -18,7 +18,7 @@
                   <!-- <LeftSidebar :left-sidebar-val="leftSidebarVal" @closeVal="closeBarValFromChild" /> -->
                 </div>
                 <div class="brand-logo">
-                  <nuxt-link :to="{ path: '/shop/fashion'}">
+                  <nuxt-link :to="{ path: '/'}">
                     <img :src="&quot;@/assets/images/fasionImage/loggo.png&quot;" class="img-fluid" alt>
                   </nuxt-link>
                 </div>
@@ -79,7 +79,7 @@ export default {
   z-index: 10;
   max-width: 100%;
   background: white;
-  height: 125px;
+  height: auto;
   /* overflow: hidden; */
   }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -91,7 +91,10 @@ export default {
 .hide-nav {
   display: none;
 }
-
+.brand-logo {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;

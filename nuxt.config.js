@@ -8,7 +8,6 @@ export default {
     shopDescription: 'Authentic ankara wear for ladies and men.',
     shopNumber: '704233752',
     shopEmail: 'chessacreations@gmail.com',
-    mpesa: '',
     logo:
       'https://firebasestorage.googleapis.com/v0/b/e-merse.appspot.com/o/pwa%2Fimage-954063?alt=media&token=c55d2bc1-ab5b-43b8-9eb9-85f272403821',
     banner:
@@ -23,7 +22,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Multikart Ecommerce | Vuejs shopping theme',
+    title: '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -33,9 +32,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/multikart/favicon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' }
     ],
-    script: [
-      { src: 'https://checkout.stripe.com/checkout.js' }
-    ]
+    script: []
   },
 
   router: {

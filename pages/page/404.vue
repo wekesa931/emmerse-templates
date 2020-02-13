@@ -9,7 +9,7 @@
             <div class="error-section">
               <h1>404</h1>
               <h2>page not found</h2>
-              <nuxt-link :to="{ path: '/shop/fashion'}" class="btn btn-solid">
+              <nuxt-link :to="{ path: '/'}" class="btn btn-solid">
                 back to home
               </nuxt-link>
             </div>

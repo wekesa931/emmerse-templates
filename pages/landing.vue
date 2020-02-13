@@ -250,7 +250,7 @@
               <div>
                 <div class="row">
                   <div class="col-xl-3 col-sm-6 col-12 demo-box">
-                    <nuxt-link :to="{ path: '/shop/fashion' }" target="_blank">
+                    <nuxt-link :to="{ path: '/' }" target="_blank">
                       <img src="../assets/images/landing-page/special features/1.jpg" class="img-fluid ">
                     </nuxt-link>
                     <h3>Fashion classic</h3>
@@ -280,13 +280,13 @@
                     <h3>pets</h3>
                   </div>
                   <div class="col-xl-3 col-sm-6 col-12 demo-box">
-                    <nuxt-link :to="{ path: '/shop/fashion-2' }" target="_blank">
+                    <nuxt-link :to="{ path: '/-2' }" target="_blank">
                       <img src="../assets/images/landing-page/special features/11.jpg" class="img-fluid ">
                     </nuxt-link>
                     <h3>Fashion Minimal</h3>
                   </div>
                   <div class="col-xl-3 col-sm-6 col-12 demo-box">
-                    <nuxt-link :to="{ path: '/shop/fashion-3' }" target="_blank">
+                    <nuxt-link :to="{ path: '/-3' }" target="_blank">
                       <img src="../assets/images/landing-page/special features/12.jpg" class="img-fluid ">
                     </nuxt-link>
                     <h3>Fashion Modern</h3>
