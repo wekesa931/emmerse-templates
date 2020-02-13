@@ -1,8 +1,7 @@
 <template>
   <div>
     <footer class="footer-light">
-      <div class="light-layout">
-      </div>
+      <div class="light-layout" />
       <section class="section-b-space light-layout">
         <div class="container">
           <div class="row footer-theme partition-f">
@@ -23,12 +22,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-google-plus" aria-hidden="true" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-twitter" aria-hidden="true" />
+                        <i class="fa fa-whatsapp" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
@@ -36,16 +30,11 @@
                         <i class="fa fa-instagram" aria-hidden="true" />
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-rss" aria-hidden="true" />
-                      </a>
-                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col offset-xl-1">
+            <!-- <div class="col offset-xl-1">
               <div class="sub-title">
                 <div class="footer-title">
                   <h4>categories</h4>
@@ -53,28 +42,38 @@
                 <div class="footer-contant">
                   <ul>
                     <li>
-                      <p href="/product/categories/Kente%20Designs">Kente Designs</p>
+                      <p href="/product/categories/Kente%20Designs">
+                        Kente Designs
+                      </p>
                     </li>
                     <li>
-                      <p href="/product/categories/Avengers%20vibes">Avengers Vibes</p>
+                      <p href="/product/categories/Avengers%20vibes">
+                        Avengers Vibes
+                      </p>
                     </li>
                     <li>
-                      <p href="/product/categories/Off-shoulders">Off Shoulder</p>
+                      <p href="/product/categories/Off-shoulders">
+                        Off Shoulder
+                      </p>
                     </li>
                     <li>
-                      <p href="/product/categories/Ankara%20Polo%20Casual%20Shirts">Polo Casual</p>
+                      <p href="/product/categories/Ankara%20Polo%20Casual%20Shirts">
+                        Polo Casual
+                      </p>
                     </li>
                     <li>
-                      <p href="/product/categories/Dashiki">Dashiki</p>
+                      <p href="/product/categories/Dashiki">
+                        Dashiki
+                      </p>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="col">
               <div class="sub-title">
                 <div class="footer-title">
-                  <h4>why we choose</h4>
+                  <h4>why choose us</h4>
                 </div>
                 <div class="footer-contant">
                   <ul>
@@ -85,7 +84,7 @@
                       <a href="#">secure shopping</a>
                     </li>
                     <li>
-                      <a href="#">wide variety</a>
+                      <a href="#">wide variety of items</a>
                     </li>
                     <li>
                       <a href="#">great prices</a>
@@ -102,15 +101,15 @@
                 <div class="footer-contant">
                   <ul class="contact-list">
                     <li>
-                      <i class="fa fa-map-marker" />{{location}}
+                      <i class="fa fa-map-marker" />{{ location }}
                       <p>Authentic ankara wear for ladies and men.</p>
                     </li>
                     <li>
-                      <i class="fa fa-phone" />Call Us: {{phone}}
+                      <i class="fa fa-phone" />Call Us: {{ phone }}
                     </li>
                     <li>
                       <i class="fa fa-envelope-o" />Email Us:
-                      <a href="#">{{email}}</a>
+                      <a href="#">{{ email }}</a>
                     </li>
                   </ul>
                 </div>
@@ -141,3 +140,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.light-layout {
+  background: white; 
+}
+</style>

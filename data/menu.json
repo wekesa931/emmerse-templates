@@ -15,12 +15,6 @@
         },
         {
           "title": "Contact Us", "type": "sub", "active": false, "redirectTo": "/page/account/contact"
-        },
-        {
-          "title": "Our Stores", "type": "sub", "active": false, "redirectTo": "/"
-        },
-        {
-          "title": "Blog", "type": "sub", "active": false, "redirectTo": "/"
         }
       ]
 }

@@ -106,12 +106,12 @@
 export default {
   data() {
     return {
-      title_1: 'free delivery',
-      subtitle_1: 'free delivery to your doorstep',
-      title_2: '24 X 7 service',
-      subtitle_2: 'services available any time of any day',
-      title_3: 'great offers',
-      subtitle_3: 'great offers available'
+      title_1: 'Delivery countrywide',
+      subtitle_1: 'Delivery to your doorstep',
+      title_2: '24 X 7',
+      subtitle_2: 'Shop online any time of any day',
+      title_3: 'great prices',
+      subtitle_3: 'great prices available!'
     }
   }
 }

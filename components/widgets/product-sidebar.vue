@@ -52,8 +52,8 @@
               />
             </svg>
             <div class="media-body">
-              <h4>free shipping</h4>
-              <p>delivery of products tou your door step</p>
+              <h4>Countrywide delivery</h4>
+              <p>delivery of products to your door step</p>
             </div>
           </div>
           <div class="media">
@@ -95,7 +95,7 @@
             </svg>
             <div class="media-body">
               <h4>24 X 7 service</h4>
-              <p>you can reach us any time you desire</p>
+              <p>Shop online any time you want</p>
             </div>
           </div>
           <div class="media">

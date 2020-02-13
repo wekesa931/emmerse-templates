@@ -79,7 +79,7 @@
                         </li>
                       </ul> -->
                       <div class="pro_inventory">
-                        <p class="active"> Hurry! We have few product in stock. </p>
+                        <p class="active"> Hurry! We have few products in stock. </p>
                         <div class="inventory-scroll">
                           <span style="width: 95%;"></span>
                         </div>

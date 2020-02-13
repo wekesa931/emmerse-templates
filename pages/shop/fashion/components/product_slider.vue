@@ -76,8 +76,7 @@ export default {
       cartproduct: {},
       dismissSecs: 5,
       dismissCountDown: 0,
-      description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+      description: process.env.shopDescription,
       swiperOption: {
         slidesPerView: 4,
         spaceBetween: 20,
