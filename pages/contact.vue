@@ -134,9 +134,9 @@
 </template>
 <script>
 /* eslint-disable */
-import Header from '../../../components/header/header1'
-import Footer from '../../../components/footer/footer1'
-import Breadcrumbs from '../../../components/widgets/breadcrumbs'
+import Header from '../components/header/header1'
+import Footer from '../components/footer/footer1'
+import Breadcrumbs from '../components/widgets/breadcrumbs'
 export default {
   components: {
     Header,

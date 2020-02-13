@@ -520,7 +520,7 @@
                     </nuxt-link>
                   </div>
                   <div class="col-xl-3 col-sm-6 col-12 demo-box">
-                    <nuxt-link :to="{ path: '/page/account/contact' }" target="_blank">
+                    <nuxt-link :to="{ path: '/contact' }" target="_blank">
                       <img src="../assets/images/landing-page/special features/other/6.jpg" class="img-fluid ">
                       <h3>contact us</h3>
                     </nuxt-link>
@@ -538,7 +538,7 @@
                     </nuxt-link>
                   </div>
                   <div class="col-xl-3 col-sm-6 col-12 demo-box">
-                    <nuxt-link :to="{ path: '/page/account/checkout' }" target="_blank">
+                    <nuxt-link :to="{ path: '/checkout' }" target="_blank">
                       <img src="../assets/images/landing-page/special features/other/9.jpg" class="img-fluid ">
                       <h3>checkout</h3>
                     </nuxt-link>

@@ -148,7 +148,7 @@
                         </div>
                       </div>
                       <div class="product-buttons">
-                        <nuxt-link :to="{ path: '/page/account/checkout'}">
+                        <nuxt-link :to="{ path: '/checkout'}">
                           <button
                             class="btn btn-solid"
                             title="Add to cart"
@@ -176,22 +176,12 @@
                             </li>
                             <li>
                               <a href="javascript:void(0)">
-                                <i class="fa fa-google-plus"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">
-                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-whatsapp"></i>
                               </a>
                             </li>
                             <li>
                               <a href="javascript:void(0)">
                                 <i class="fa fa-instagram"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">
-                                <i class="fa fa-rss"></i>
                               </a>
                             </li>
                           </ul>
@@ -347,12 +337,12 @@ export default {
         quantity: 1
       };
       this.$store.dispatch("cart/addItemToCart", items);
-      this.$router.push("/page/account/checkout");
+      this.$router.push("/checkout");
     },
     buyNow: function (product, qty) {
       product.quantity = qty || 1
       this.$store.dispatch('cart/addToCart', product)
-      this.$router.push('/page/account/checkout')
+      this.$router.push('/checkout')
     },
     // Item Count
     increment() {

@@ -123,7 +123,7 @@
                 <nuxt-link :to="{ path: '/page/account/cart'}" :class="'view-cart'">
                   view cart
                 </nuxt-link>
-                <nuxt-link :to="{ path: '/page/account/checkout'}" :class="'checkout'">
+                <nuxt-link :to="{ path: '/checkout'}" :class="'checkout'">
                   checkout
                 </nuxt-link>
               </div>

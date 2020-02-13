@@ -14,7 +14,7 @@
           ]
         },
         {
-          "title": "Contact Us", "type": "sub", "active": false, "redirectTo": "/page/account/contact"
+          "title": "Contact Us", "type": "sub", "active": false, "redirectTo": "/contact"
         }
       ]
 }

@@ -141,7 +141,7 @@ export default {
         quantity: 1
       };
       this.$store.dispatch("cart/addItemToCart", items);
-      this.$router.push("/page/account/checkout");
+      this.$router.push("/checkout");
     },
     getImgUrl(path) {
       return require("@/assets/images/" + path);
