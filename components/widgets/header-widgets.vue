@@ -36,11 +36,13 @@
                       <ul v-if="searchItems.length" class="search-results">
                         <li v-for="(product,index) in searchItems" :key="index" class="product-box">
                           <div class="img-wrapper">
-                            <img
+                            <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
+                              <img
                               :key="index"
                               :src="product.imageUrls[0]"
                               class="img-fluid bg-img"
                             >
+                            </nuxt-link>
                           </div>
                           <div class="product-detail">
                             <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
