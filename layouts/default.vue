@@ -10,7 +10,7 @@ import layoutSetting from '../components/widgets/layout-setting'
 export default {
   head() {
     return {
-      title: 'MultiKart Ecommerce | Vuejs Shopping Theme'
+      title: process.env.shopName
     }
   },
   components: {

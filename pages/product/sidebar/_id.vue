@@ -6,13 +6,11 @@
     <section class="section-b-space">
       <!--  -->
 
-
-
-<div class="collection-wrapper">
+      <div class="collection-wrapper">
         <div class="container">
           <div class="row">
             <div class="col-lg-3">
-            <productSidebar />
+              <productSidebar />
             </div>
             <div class="col-lg-9 col-sm-12 col-xs-12 productdetail">
               <div class="container-fluid">
@@ -22,7 +20,7 @@
                       <div class="swiper-wrapper">
                         <div
                           class="swiper-slide"
-                          v-for="(product,index) in getDetail.imageUrls"
+                          v-for="(product, index) in getDetail.imageUrls"
                           :key="index"
                         >
                           <img
@@ -40,7 +38,7 @@
                           <div class="swiper-wrapper">
                             <div
                               class="swiper-slide"
-                              v-for="(product,index) in getDetail.imageUrls"
+                              v-for="(product, index) in getDetail.imageUrls"
                               :key="index"
                             >
                               <img
@@ -79,7 +77,9 @@
                         </li>
                       </ul> -->
                       <div class="pro_inventory">
-                        <p class="active"> Hurry! We have few products in stock. </p>
+                        <p class="active">
+                          Hurry! We have few products in stock.
+                        </p>
                         <div class="inventory-scroll">
                           <span style="width: 95%;"></span>
                         </div>
@@ -148,12 +148,14 @@
                         </div>
                       </div>
                       <div class="product-buttons">
-                        <nuxt-link :to="{ path: '/checkout'}">
+                        <nuxt-link :to="{ path: '/checkout' }">
                           <button
                             class="btn btn-solid"
                             title="Add to cart"
                             @click="openWhatsAppForm"
-                          >Get product</button>
+                          >
+                            Get product
+                          </button>
                         </nuxt-link>
                         <!-- <button
                             class="btn btn-solid"
@@ -163,7 +165,9 @@
                       </div>
                       <div class="border-product">
                         <h6 class="product-title">product details</h6>
-                        <p>{{getDetail.description.substring(0,200)+"...."}}</p>
+                        <p>
+                          {{ getDetail.description.substring(0, 200) + "...." }}
+                        </p>
                       </div>
                       <div class="border-product">
                         <h6 class="product-title">share it</h6>
@@ -193,8 +197,7 @@
                           </form> -->
                         </div>
                       </div>
-                      <div class="border-product">
-                      </div>
+                      <div class="border-product"></div>
                     </div>
                   </div>
                 </div>
@@ -204,12 +207,11 @@
         </div>
       </div>
 
-
       <!--  -->
-     
+
       <relatedProduct :productTYpe="productTYpe" :productId="productId" />
       <b-modal id="modal-1" size="md" centered hide-footer>
-        <template v-slot:modal-title>{{getDetail.name}}</template>
+        <template v-slot:modal-title>{{ getDetail.name }}</template>
         <!-- <img src="../../../assets/images/size-chart.jpg" alt="size-chart" class="img-fluid" /> -->
       </b-modal>
     </section>
@@ -218,13 +220,13 @@
 </template>
 <script>
 /* eslint-disable */
-import { mapState, mapGetters } from 'vuex'
-import Header from '../../../components/header/header1'
-import Footer from '../../../components/footer/footer1'
-import Breadcrumbs from '../../../components/widgets/breadcrumbs'
-import Timer from '../../../components/widgets/timer'
-import productSidebar from '../../../components/widgets/product-sidebar'
-import relatedProduct from '../../../components/widgets/related-products'
+import { mapState, mapGetters } from "vuex";
+import Header from "../../../components/header/header1";
+import Footer from "../../../components/footer/footer1";
+import Breadcrumbs from "../../../components/widgets/breadcrumbs";
+import Timer from "../../../components/widgets/timer";
+import productSidebar from "../../../components/widgets/product-sidebar";
+import relatedProduct from "../../../components/widgets/related-products";
 export default {
   components: {
     Header,
@@ -238,12 +240,12 @@ export default {
     return {
       getDetail: {},
       counter: 1,
-      activeColor: '',
-      selectedSize: '',
-      qty: '',
+      activeColor: "",
+      selectedSize: "",
+      qty: "",
       size: [],
-      productTYpe: '',
-      productId: '',
+      productTYpe: "",
+      productId: "",
       swiperOption: {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -255,14 +257,14 @@ export default {
         freeMode: true,
         centeredSlides: false
       }
-    }
+    };
   },
   computed: {
     ...mapState({
       currency: state => state.products.currency
     }),
     ...mapGetters({
-      curr: 'products/changeCurrency'
+      curr: "products/changeCurrency"
     }),
     // getDetail(){
     //   const products = this.$store.getters['products/returnProducts']
@@ -271,62 +273,66 @@ export default {
     //   return singleProduct[0];
     // },
     swiper() {
-      return this.$refs.mySwiper.swiper
+      return this.$refs.mySwiper.swiper;
     }
   },
   created() {
-    const products = this.$store.getters['products/returnProducts']
-    if(products.length === 0) {
+    const products = this.$store.getters["products/returnProducts"];
+    if (products.length === 0) {
       this.$router.push("/");
     }
     const singleProduct = products.filter(product => {
-        return product.id === this.$route.params.id})
-    this.getDetail = singleProduct[0]
+      return product.id === this.$route.params.id;
+    });
+    this.getDetail = singleProduct[0];
 
-    this.$store.dispatch('products/addDetailCategory', this.getDetail.category[0])
-    this.$store.dispatch('products/addDetailId', this.getDetail.id)
-    this.productTYpe = this.getDetail.category[0]
-      this.productId = this.getDetail.id
+    this.$store.dispatch(
+      "products/addDetailCategory",
+      this.getDetail.category[0]
+    );
+    this.$store.dispatch("products/addDetailId", this.getDetail.id);
+    this.productTYpe = this.getDetail.category[0];
+    this.productId = this.getDetail.id;
 
     // For displaying default color and size on pageload
     // this.uniqColor = this.getDetail.variants[0].color
     // this.sizeVariant(this.getDetail.variants[0].image_id)
     // Active default color
-    this.activeColor = this.uniqColor
+    this.activeColor = this.uniqColor;
     // this.changeSizeVariant(this.getDetail.variants[0].size)
     // related product type
     // this.relatedProducts()
   },
   methods: {
-    priceCurrency: function () {
-      this.$store.dispatch('products/changeCurrency')
+    priceCurrency: function() {
+      this.$store.dispatch("products/changeCurrency");
     },
-    addToWishlist: function (product) {
-      this.$store.dispatch('products/addToWishlist', product)
+    addToWishlist: function(product) {
+      this.$store.dispatch("products/addToWishlist", product);
     },
     discountedPrice(product) {
-      const price = product.price - (product.price * product.discount / 100)
-      return price
+      const price = product.price - (product.price * product.discount) / 100;
+      return price;
     },
     // Related Products display
     relatedProducts() {
-      this.productTYpe = this.getDetail.category[0]
-      this.productId = this.getDetail.id
+      this.productTYpe = this.getDetail.category[0];
+      this.productId = this.getDetail.id;
     },
     // Display Unique Color
     Color(variants) {
-      const uniqColor = []
+      const uniqColor = [];
       for (let i = 0; i < Object.keys(variants).length; i++) {
         if (uniqColor.indexOf(variants[i].color) === -1) {
-          uniqColor.push(variants[i].color)
+          uniqColor.push(variants[i].color);
         }
       }
-      return uniqColor
+      return uniqColor;
     },
     // add to cart
-    addToCart: function (product, qty) {
-      product.quantity = qty || 1
-      this.$store.dispatch('cart/addToCart', product)
+    addToCart: function(product, qty) {
+      product.quantity = qty || 1;
+      this.$store.dispatch("cart/addToCart", product);
     },
     openWhatsAppForm() {
       const items = {
@@ -339,38 +345,38 @@ export default {
       this.$store.dispatch("cart/addItemToCart", items);
       this.$router.push("/checkout");
     },
-    buyNow: function (product, qty) {
-      product.quantity = qty || 1
-      this.$store.dispatch('cart/addToCart', product)
-      this.$router.push('/checkout')
+    buyNow: function(product, qty) {
+      product.quantity = qty || 1;
+      this.$store.dispatch("cart/addToCart", product);
+      this.$router.push("/checkout");
     },
     // Item Count
     increment() {
-      this.counter++
+      this.counter++;
     },
     decrement() {
-      if (this.counter > 1) this.counter--
+      if (this.counter > 1) this.counter--;
     },
     // Change size variant
     changeSizeVariant(variant) {
-      this.selectedSize = variant
+      this.selectedSize = variant;
     },
     getImgUrl(path) {
-      return require('@/assets/images/' + path)
+      return require("@/assets/images/" + path);
     },
     slideTo(id) {
-      this.swiper.slideTo(id, 1000, false)
+      this.swiper.slideTo(id, 1000, false);
     },
     sizeVariant(id, slideId, color) {
-      this.swiper.slideTo(slideId, 1000, false)
-      this.size = []
-      this.activeColor = color
-      this.getDetail.variants.filter((item) => {
+      this.swiper.slideTo(slideId, 1000, false);
+      this.size = [];
+      this.activeColor = color;
+      this.getDetail.variants.filter(item => {
         if (id === item.image_id) {
-          this.size.push(item.size)
+          this.size.push(item.size);
         }
-      })
+      });
     }
   }
-}
+};
 </script>

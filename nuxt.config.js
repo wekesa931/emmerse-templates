@@ -4,7 +4,7 @@ export default {
   env: {
     shopURL: 'https://www.chessa.co.ke/',
     shopID: 'chessa-creations',
-    shopName: 'chessa',
+    shopName: 'chessa creations',
     shopDescription: 'Authentic ankara wear for ladies and men.',
     shopNumber: '704233752',
     shopEmail: 'chessacreations@gmail.com',
@@ -26,7 +26,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.shopDescription }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/multikart/favicon.png' },

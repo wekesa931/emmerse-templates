@@ -18,12 +18,12 @@
                   :title="collection.categoryname"
                   :key="index"
                 >
-                  <div style="margin: 3%; color: black; display: flex">
+                  <!-- <div style="margin: 3%; color: black; display: flex">
                     <h4>{{collection.categoryname}}</h4>
                     <nuxt-link :to="{ path: '/product/categories/'+collection.categoryname}">
                       <h4 style="color: black">SEE ALL <i aria-hidden="true" class="fa fa-angle-right"></i></h4>
                     </nuxt-link>
-                  </div>
+                  </div> -->
                   <div class="no-slider row">
                     <div
                       class="product-box"
