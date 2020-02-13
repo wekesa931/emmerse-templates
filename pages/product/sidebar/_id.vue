@@ -220,7 +220,7 @@
       <relatedProduct :productTYpe="productTYpe" :productId="productId" />
       <b-modal id="modal-1" size="md" centered hide-footer>
         <template v-slot:modal-title>{{getDetail.name}}</template>
-        <img src="../../../assets/images/size-chart.jpg" alt="size-chart" class="img-fluid" />
+        <!-- <img src="../../../assets/images/size-chart.jpg" alt="size-chart" class="img-fluid" /> -->
       </b-modal>
     </section>
     <Footer />
