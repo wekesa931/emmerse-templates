@@ -66,8 +66,8 @@ export default {
   props: ['products'],
   data() {
     return {
-      title: 'top collection',
-      subtitle: 'special offer',
+      title: 'top collections',
+      subtitle: 'special offers',
       showCart: false,
       showquickviewmodel: false,
       showcomapreModal: false,

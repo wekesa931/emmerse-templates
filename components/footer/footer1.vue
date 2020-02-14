@@ -11,22 +11,22 @@
               </div>
               <div class="footer-contant">
                 <div class="footer-logo">
-                  <img :src="logo" alt="logo" style="width: 40%">
+                  <img :src="logo" alt="logo" style="width: 30%">
                 </div>
                 <div class="footer-social">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a :href="facebooklink" target="_blank">
                         <i class="fa fa-facebook" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a :href="whatsapplink" target="_blank">
                         <i class="fa fa-whatsapp" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a :href="instagramlink" target="_blank">
                         <i class="fa fa-instagram" aria-hidden="true" />
                       </a>
                     </li>
@@ -73,10 +73,13 @@
             <div class="col">
               <div class="sub-title">
                 <div class="footer-title">
-                  <h4>why choose us</h4>
+                  <h4>Powered by</h4>
                 </div>
                 <div class="footer-contant">
-                  <ul>
+                  <a href="https://e-merse.com">
+                    <img class="emerse-logo" :src="emerselogo" alt="e-merse">
+                  </a>
+                  <!-- <ul>
                     <li>
                       <a href="#">delivery countrywide</a>
                     </li>
@@ -89,7 +92,7 @@
                     <li>
                       <a href="#">great prices</a>
                     </li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -105,11 +108,11 @@
                       <p>Authentic ankara wear for ladies and men.</p>
                     </li>
                     <li>
-                      <i class="fa fa-phone" />Call Us: {{ phone }}
+                      <i class="fa fa-phone" />Call Us: +254{{ phone }}
                     </li>
                     <li>
                       <i class="fa fa-envelope-o" />Email Us:
-                      <a href="#">{{ email }}</a>
+                      <a href="#" style="text-transform: none;">{{ email }}</a>
                     </li>
                   </ul>
                 </div>
@@ -129,10 +132,14 @@ import TapTop from '../widgets/tap-to-top'
 export default {
   data() {
     return {
+      emerselogo: require('@/assets/images/icon/icon.jpg'),
       logo: process.env.logo,
       location: process.env.location,
       phone: process.env.shopNumber,
       email: process.env.shopEmail,
+      facebooklink: process.env.facebookPage,
+      instagramlink: process.env.instagramPage,
+      whatsapplink: `https://wa.me/254${process.env.shopNumber}?text=Hi! I am interested in your items. Please get back to me.` 
     }
   },
   components: {
@@ -144,5 +151,16 @@ export default {
 <style>
 .light-layout {
   background: white; 
+}
+.emerse-logo {
+  max-width: 100%;
+  width: 170px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .emerse-logo {
+    max-width: 100%;
+    width: 120px;
+  }
 }
 </style>

@@ -15,7 +15,7 @@ export default {
     location: 'CBD, Nairobi',
     facebookPage: 'https://www.facebook.com/ChessaCreations/',
     twitterPage: '',
-    instagramPage: ''
+    instagramPage: 'https://www.instagram.com/chessacreations/?hl=en'
   },
   subdirectory: '/',
   /*
@@ -29,7 +29,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.shopDescription }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/multikart/favicon.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/chessafavicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' }
     ],
     script: []

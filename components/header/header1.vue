@@ -49,7 +49,7 @@ export default {
       leftSidebarVal: false
     }
   },
-    mounted() {
+  mounted() {
     window.addEventListener('scroll', this.handleScroll)
   },
   methods: {

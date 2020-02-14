@@ -46,7 +46,7 @@
             </div>
           </div>
         </div>
-        <div class="row" style="display: none">
+        <div class="row">
           <div class="col-sm-12">
             <form class="theme-form" method="post" @submit="checkForm">
               <div v-if="errors.length">
@@ -70,7 +70,7 @@
                   >
                 </div>
                 <div class="col-md-6">
-                  <label for="lname">Last Name</label>
+                  <!-- <label for="lname">Last Name</label>
                   <input
                     id="lname"
                     v-model="lname"
@@ -79,7 +79,7 @@
                     placeholder="Last Name"
                     name="lname"
                     required
-                  >
+                  > -->
                 </div>
                 <div class="col-md-6">
                   <label for="phone">Phone number</label>
@@ -94,7 +94,7 @@
                   >
                 </div>
                 <div class="col-md-6">
-                  <label for="email">Email</label>
+                  <!-- <label for="email">Email</label>
                   <input
                     id="email"
                     v-model="email"
@@ -103,9 +103,9 @@
                     placeholder="Email"
                     name="email"
                     required
-                  >
+                  > -->
                 </div>
-                <div class="col-md-12">
+                <!-- <div class="col-md-12">
                   <label for="message">Write Your Message</label>
                   <textarea
                     id="message"
@@ -115,7 +115,7 @@
                     name="message"
                     rows="6"
                   />
-                </div>
+                </div> -->
                 <div class="col-md-12">
                   <input
                     type="submit"
@@ -147,11 +147,11 @@ export default {
     return {
       phoneimage: require('@/assets/images/icon/phone.png'),
       emailimage: require('@/assets/images/icon/email.png'),
-      phone1: '704233752',
-      phone2: '+86 163 - 451 - 7894',
-      address: 'ABC Complex,Near xyz, New York <br /> USA 123456',
-      email1: 'chessacreations@gmail.com',
-      email2: 'info@shopcart.com',
+      phone1: process.env.shopNumber,
+      phone2: process.env.shopNumber,
+      address: process.env.location,
+      email1: process.env.shopEmail,
+      email2: process.env.shopEmail,
       errors: [],
       fname: null,
       lname: null,
