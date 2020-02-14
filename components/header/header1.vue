@@ -10,7 +10,7 @@
             <div class="main-menu">
               <div class="menu-left">
                 <div class="navbar">
-                  <a class="hide-nav" @click="left_sidebar">
+                  <a v-show="backbutton" class="hide-nav" @click="left_sidebar">
                     <div class="bar-style">
                       <i aria-hidden="true" class="fa fa-angle-left" style="color: black; fontSize: 30px"></i>
                     </div>
@@ -46,7 +46,18 @@ export default {
   },
   data() {
     return {
-      leftSidebarVal: false
+      leftSidebarVal: false,
+      backbutton: false
+    }
+  },
+  watch: {
+    $route(to, from) {
+      if (to.path === '/' && this.vuetify.breakpoint.smAndDown) {
+        this.backbutton = false
+      }
+      if (from.path === '/' && this.vuetify.breakpoint.smAndDown) {
+        this.backbutton = true
+      }
     }
   },
   mounted() {

@@ -7037,9 +7037,14 @@ i {
   font-size: 12px;
   line-height: 14px;
   font-weight: 600;
-  top: -9px;
+  top: 20%;
   right: -8px;
   padding: 3px;
+}
+@media (max-width: 800px) {
+  .cart_qty_cls {
+    top: -9px;
+  }
 }
 
 /*=====================

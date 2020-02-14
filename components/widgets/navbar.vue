@@ -14,14 +14,10 @@
             </div>
           </li>
           <li v-for="(menuItem, index) in menulist" :key="index" :class="menuItem.megamenu ? 'mega-menu' : 'dropdown'">
-            <!-- <a :href="menuItem.redirectTo" style="color:black;" class="nav-link" @click="setActive(menuItem.title)">
+            <a :href="menuItem.redirectTo" style="color:black;" class="nav-link" @click="setActive(menuItem.title)">
               {{ menuItem.title }}
               <span v-if="menuItem.children || menuItem.megamenu" class="sub-arrow" />
-            </a> -->
-            <nuxt-link :to="menuItem.redirectTo" style="color:black;" class="nav-link">
-              {{ menuItem.title }}
-              <span v-if="menuItem.children || menuItem.megamenu" class="sub-arrow" />
-            </nuxt-link>
+            </a>
             <ul v-if="menuItem.children" class="nav-submenu" :class="{ opensubmenu: isActive(menuItem.title) }">
               <li v-for="(childrenItem, index) in menuItem.children" :key="index">
                 <a v-if="childrenItem.children" href="javascript:void(0)" @click="setActiveChild(childrenItem.title)">
