@@ -1,6 +1,6 @@
 <template>
   <!-- eslint-disable -->
-  <div class="top-header" style="background: #f8f8f8;">
+  <div class="top-header">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">

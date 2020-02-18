@@ -38,10 +38,10 @@
                           <div class="img-wrapper">
                             <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
                               <img
-                              :key="index"
-                              :src="product.imageUrls[0]"
-                              class="img-fluid bg-img"
-                            >
+                                :key="index"
+                                :src="product.imageUrls[0]"
+                                class="img-fluid bg-img"
+                              >
                             </nuxt-link>
                           </div>
                           <div class="product-detail">

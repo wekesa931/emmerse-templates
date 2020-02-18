@@ -86,7 +86,7 @@ export default {
 #myHeader {
   z-index: 10;
   max-width: 100%;
-  background: white;
+  /* background: white; */
   height: auto;
   /* overflow: hidden; */
   }
@@ -95,6 +95,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
+  background: inherit;
 }
 .hide-nav {
   display: none;
