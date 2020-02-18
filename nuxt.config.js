@@ -52,6 +52,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~plugins/collectchat.js', ssr: false },
+    { src: '~plugins/ga.js', ssr: false },
     { src: '~/plugins/plugin.js', ssr: false },
     { src: '~/plugins/localStorage.js', ssr: false }
   ],
