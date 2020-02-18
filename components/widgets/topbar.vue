@@ -6,9 +6,9 @@
         <div class="col-lg-6">
           <div class="header-contact">
             <ul>
-              <li>Welcome to our store Chessa Creations</li>
+              <li>Welcome to {{ shopname }}</li>
               <li>
-                <i class="fa fa-phone" aria-hidden="true"></i>Call Us:  0704233752
+                <i class="fa fa-phone" aria-hidden="true"></i>Call Us:  {{ shopnumber }}
               </li>
             </ul>
           </div>
@@ -24,6 +24,8 @@ import firebase from 'firebase'
 export default {
   data() {
     return {
+      shopname: process.env.shopName,
+      shopnumber: process.env.shopNumber,
       isLogin: localStorage.getItem('userlogin')
     }
   }

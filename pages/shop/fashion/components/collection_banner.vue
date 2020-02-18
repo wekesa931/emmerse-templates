@@ -31,12 +31,12 @@ export default {
     return {
       items: [
         {
-          imagepath: require('@/assets/images/women1.jpg'),
+          imagepath: '',
           title: 'men',
           subtitle: 'save 30%'
         },
         {
-          imagepath: require('@/assets/images/men1.jpg'),
+          imagepath: '',
           title: 'women',
           subtitle: 'save 60%'
         }

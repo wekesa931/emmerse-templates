@@ -53,7 +53,7 @@ export default {
       items: [
         {
           imagepath: process.env.banner,
-          title: 'welcome to our store',
+          title: `welcome to ${process.env.shopName}`,
           subtitle: process.env.shopName,
           alignclass: 'p-left'
         }

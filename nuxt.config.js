@@ -34,7 +34,6 @@ export default {
     ],
     script: []
   },
-
   router: {
     base: '/'
   },

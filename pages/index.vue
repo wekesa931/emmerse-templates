@@ -7,7 +7,7 @@
 <script>
 /* eslint-disable */
 import axios from 'axios';
-const Fashion = () => import('./shop/fashion/index')
+const Fashion = () => import('./shop/fashion/index');
 export default {
   components: {
     Fashion

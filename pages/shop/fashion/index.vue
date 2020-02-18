@@ -40,7 +40,6 @@ import ProductSlider from "./components/product_slider";
 import ProductTab from "./components/product_tab";
 import Services from "./components/services";
 import Instagram from "./components/instagram";
-import LogoSlider from "./components/logo_slider";
 
 export default {
   components: {
@@ -51,7 +50,6 @@ export default {
     ProductTab,
     Services,
     Instagram,
-    LogoSlider,
     Footer,
     quickviewModel,
     compareModel,
